@@ -211,6 +211,10 @@ section {
     border-radius: 0 0.5rem 0 0.5rem;
 }
 
+.btn-pedido {
+    bottom: 20px;
+}
+
 .service-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
@@ -257,7 +261,7 @@ section {
     z-index: 1;
 }
 
-.h2-section{
+.h2-section {
     font-size: 16px;
 }
 
@@ -349,11 +353,13 @@ section {
     section {
         padding: 50px 8%;
     }
-    #menu-icon{
+
+    #menu-icon {
         display: initial;
         color: var(--text-color);
     }
-    header .navbar{
+
+    header .navbar {
         position: absolute;
         top: -400px;
         left: 0;
@@ -364,40 +370,60 @@ section {
         background: #2b2640;
         transition: .3s;
     }
-    header .navbar.active{
+
+    header .navbar.active {
         top: 70px;
     }
-    .navbar a{
-     padding: 1.5rem;
-     display: block;
+
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
     }
-    .col{
+
+    .col {
         width: 50%;
         margin-bottom: 10px;
     }
+
+    .copyright {
+        position: fixed;
+        bottom: 0;
+        left: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+
+    }
 }
 
-@media(max-width:720px){
-    header{
-        padding:10px 16px;
+@media(max-width:720px) {
+    header {
+        padding: 10px 16px;
     }
-    .home{
+
+    .home {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about{
+
+    .about {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about{
+
+    .about {
         order: 2;
     }
-    section{
+
+    section {
         padding: 100px 7%;
     }
 }
+
 @media (max-width:575px) {
-    .col{
+    .col {
         width: 100%;
     }
 }
